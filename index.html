@@ -8,8 +8,13 @@
   </style>
   <script src="typing.js"></script>
   <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
+  <audio autoplay="autoplay" id="music">
+    <source src="music/dadada.ogg" type="audio/ogg" />
+    <source src="music/dadada.mp3" type="audio/mpeg" />
+  </audio>
     <div class="row">
       <div class="col-lg-6">
         <div id="source_image">
@@ -147,7 +152,7 @@
                     <br />
                     希望到那再见时，<br />
                     我们会以最好的自己最想让对方看到的姿态，<br />
-                    互相面对<br />
+                    微笑面对<br />
 
                     <br>
                     <br>
@@ -177,7 +182,7 @@
     var typing = new Typing({
       source: document.getElementById('source_doc'),
       output: document.getElementById('output_doc'),
-      delay: 80
+      delay: 50
     });
     typing.start();
   </script>
